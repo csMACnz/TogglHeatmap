@@ -12,7 +12,7 @@ dotnet_csproj:
   informational_version: '{version}'
 build_script:
 - ps: dotnet build -c Release
-- ps: dotnet pack -c Release --output Package /p:Version=$env:APPVEYOR_BUILD_VERSION /p:PackageVersion=$env:APPVEYOR_BUILD_VERSION
+- ps: dotnet pack -c Release --output ../Package /p:Version=$env:APPVEYOR_BUILD_VERSION /p:PackageVersion=$env:APPVEYOR_BUILD_VERSION
 artifacts:
 - path: Package/TogglHeatmap.*.nupkg
 deploy:
