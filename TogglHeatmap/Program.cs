@@ -83,9 +83,11 @@ namespace csMACnz.TogglHeatmap
                 .Where(t => t.day == firstDayOfWeek)
                 .Select(t => t.index)
                 .First();
+
             var daysList = new[] { "Time" }
                 .Union(weekdayNames.Skip(pivotIndex).Take(7 - pivotIndex))
-                .Union(weekdayNames.Skip(7 - pivotIndex).Take(pivotIndex));
+                .Union(weekdayNames.Take(pivotIndex))
+                .ToList();
             Console.WriteLine(string.Join(",", daysList));
 
             var allWeeksData = Enumerable
