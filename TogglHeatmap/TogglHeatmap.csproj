@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>csMACnz.TogglHeatmap</RootNamespace>
+    <AssemblyName>csMACnz.TogglHeatmap</AssemblyName>
+    <AssemblyTitle>csMACnz.TogglHeatmap</AssemblyTitle>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeIdentifiers>win-x64;osx-x64;linux-x64</RuntimeIdentifiers>
+    <Title>TogglHeatmap</Title>
+    <Description>TogglHeatmap</Description>
+    <PackageId>TogglHeatmap</PackageId>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/csmacnz/TogglHeatmap/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/csmacnz/TogglHeatmap</PackageProjectUrl>
+    <PackageTags>Toggl Heatmap tool</PackageTags>
+    <ToolCommandName>TogglHeatmap</ToolCommandName>
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Beefeater" Version="0.5.0" />
+  </ItemGroup>
+
+</Project>
