@@ -84,9 +84,18 @@ namespace csMACnz.TogglHeatmap
             Console.WriteLine(@"TogglHeatmap - Heatmap data generation from toggl time entry data
 
 Usage:
-TogglHeatmap dataFile.csv
+TogglHeatmap dataFile.csv <startDate> (<endDate> | <weekCount>)
 TogglHeatmap --help
-TogglHeatmap --version");
+TogglHeatmap --version
+
+startDate - The first date to start mapping data from.
+weekCount - The number of weeks to process data for (from startDate).
+endDate   - The last date used to calculate the week count.
+
+Notes:
+The startDate will also be the first day of week used.
+The endDate will be rounded back to the produce a whole number week count.
+");
         }
 
     }
